@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Salve Electrical Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #f8f9fa;
+            padding: 8px 20px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .top-bar span {
+            margin-left: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 60px;
+            /* Adjust size as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .certification-logos {
+            display: flex;
+            gap: 10px;
+        }
+
+        .certification-logos img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+        }
+
+        .hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 100px;
+            transform: translateY(-50%);
+            color: white;
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #dc3545;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            /* Hide the overflow to create the sliding effect */
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            /* Smooth transition for sliding */
+        }
+
+        .service-item {
+            min-width: 250px;
+            /* Minimum width for each item */
+            margin-right: 20px;
+            /* Space between items */
+            text-align: center;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-item span {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .services-grid-wrapper {
+            display: flex;
+            animation: scroll-left 15s linear infinite;
+            /* Loop the animation */
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+                /* Scrolls to the left */
+            }
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .quick-link {
+            background: #003b71;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .milestone {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 40px 20px;
+            background: #f8f9fa;
+        }
+
+        .milestone-content {
+            padding: 40px;
+            background: #003b71;
+            color: white;
+        }
+
+        .diagnostics {
+            padding: 40px 20px;
+        }
+
+        .diagnostics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .diagnostic-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .diagnostic-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #003b71;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <span>Shirdi</span>
+        <span>Rahul Salve</span>
+        <span>content +91 9922213587</span>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo-section">
+                <img src="../JTG - Frontend Home Assignment/images/light-bulb-wrench-electrical-repair-logo-design-vector-illustration_608275-107.jpg"
+                    alt="Poona Hospital Logo" class="logo">
+                <div class="certification-logos">
+                    <img src="../JTG - Frontend Home Assignment/images/850685.png" alt="ISO">
+
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Service</a>
+                <a href="#">Product</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Result </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Shop Banner</title>
+            <style>
+                .banner {
+                    width: 100%;
+                    height: 200px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1200/300');
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    text-align: center;
+                    padding: 20px;
+                    position: relative;
+                }
+
+                .banner::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background: #3498db;
+                }
+
+                .banner-content {
+                    max-width: 800px;
+                }
+
+                .banner h1 {
+                    font-size: 2.5em;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                .banner p {
+                    font-size: 1.2em;
+                    margin: 0;
+                }
+
+                .product-icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-top: 20px;
+                }
+
+                .product-icon {
+                    width: 50px;
+                    height: 50px;
+                    background: white;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            </style>
+
+
+
+
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>राहुल साळवे लाईट हाऊस</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:wght@400;700&display=swap');
+
+                .banner {
+                    width: 100%;
+                    background: linear-gradient(to right, #1a237e, #0d47a1);
+                    padding: 20px;
+                    text-align: center;
+                    font-family: 'Tiro Devanagari Marathi', serif;
+                }
+
+                .shop-name {
+                    font-size: 2.5em;
+                    color: white;
+                    margin-bottom: 10px;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+
+                .subtext {
+                    font-size: 1.2em;
+                    color: #ffeb3b;
+                    margin-bottom: 20px;
+                }
+
+                .products {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    padding: 20px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 8px;
+                }
+
+                .product {
+                    text-align: center;
+                    color: white;
+                }
+
+                .product img {
+                    width: 60px;
+                    height: 60px;
+                    background: white;
+                    padding: 5px;
+                    border-radius: 8px;
+                    margin-bottom: 5px;
+                }
+
+                .contact {
+                    color: white;
+                    margin-top: 15px;
+                    font-size: 1.1em;
+                }
+
+                .section1 {
+                    text-align: center;
+                    background-image: url('./images/white-stage-background-with-focus-light-effect_1017-38988.avif');
+                    background-size: cover;
+                    /* Ensure the image covers the section */
+                    background-position: center;
+                    /* Center the image */
+                    padding: 40px;
+
+                }
+
+                .section1 h1 {
+                    font-family: 'Arial', sans-serif;
+                    font-weight: bold;
+                    /* Make the text bold */
+                    font-size: 36px;
+
+                    /* Larger font size */
+                    color: #003b71;
+                    /* White text to stand out on background image */
+                    margin: 0;
+                }
+
+
+                /* Example for 3rs class (assuming you have this class for other sections) */
+                .three-hrs {
+                    background-color: #008CBA;
+                    /* Blue background */
+                    padding: 15px;
+                    border-radius: 5px;
+                    color: white;
+                    /* Text color */
+                    font-weight: bold;
+                    font-family: 'Arial', sans-serif;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="banner">
+                <h1 class="shop-name">राहुल साळवे लाईट हाऊस</h1>
+                <div class="subtext">टेबल फॅन, पंखे, कुलर, इस्त्री, मोटर पिसीसीबीची कामे केली जातात.</div>
+                <div class="products">
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/images (1).jpeg" alt="मोटर">
+                        <div>मिक्सर</div>
+                    </div>
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/61RSq8meM5L.jpg" alt="मोटर">
+                        <div>मोटर</div>
+                    </div>
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/71qt9+Der5L._AC_UF894,1000_QL80_.jpg"
+                            alt="फॅन">
+                        <div>फॅन</div>
+                    </div>
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/61wQ9QEAhnL.jpg" alt="इस्त्री">
+                        <div>इस्त्री</div>
+                    </div>
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/navbharat-times.webp" alt="कुलर">
+                        <div>कुलर</div>
+                    </div>
+                    <div class="product">
+                        <img src="../JTG - Frontend Home Assignment/images/whirlpool-washing-machine-9-kg-500x500.webp"
+                            alt="वॉशिंग">
+                        <div>वॉशिंग</div>
+                    </div>
+                </div>
+                <div class="contact">
+                    संपर्क: 892224133491
+                </div>
+            </div>
+        </body>
+
+        <section class="hero">
+            <img src="../JTG - Frontend Home Assignment/images/394350273_363377502698197_5772628679922347506_n.jpg"
+                alt="Emergency Unit" style="width: 100%; height: 100%; object-fit: cover;">
+
+        </section>
+        <!-- <section class="hero">
+            <img src="../JTG - Frontend Home Assignment/images/33.png"
+                alt="Emergency Unit" style="width: 100%; height: 100%; object-fit: cover;">
+           
+        </section> -->
+        <section class="section1">
+            <h1>आम्ही विविध घरगुती उपकरणांच्या दुरुस्ती आणि देखभालीच्या सेवा प्रदान करतो.</h1>
+        </section>
+
+        <section class="slider-container">
+            <div class="slider">
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/istockphoto-480973384-612x612.jpg"
+                        alt="Table Fan">
+                    <span>Table Fan (टेबल फॅन)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/shopping (1).webp" alt="Ceiling Fan">
+                    <span>Ceiling Fans (पंखे)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/images (8).jpeg" alt="Cooler">
+                    <span>Coolers (कुलर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/images (9).jpeg" alt="Iron">
+                    <span>Irons (इस्त्री)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/DC1HP-750W-220V-DC-Motor-Governor-1-2HP-1HP-Input-220VAC-Output-220VDC-Brushed-DC-Motor-Controller-Control-Box-Control-Panel.avif"
+                        alt="Motor">
+                    <span>Motors (मोटर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/images (10).jpeg" alt="PCB Repair">
+                    <span>PCB Repair (पिसीसीबीची कामे)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/51WEkopDGsL._AC_UF894,1000_QL80_.jpg" alt="Mixer">
+                    <span>Mixers (मिक्सर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/B7kvp1nYZvfrEzeGZpg8-display.jpg" alt="Grinder">
+                    <span>Grinders (ग्राइंडर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/images (12).jpeg" alt="Washing Machine">
+                    <span>Washing Machines (वॉशिंग मशीन)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/c.jpeg" alt="Refrigerator">
+                    <span>Refrigerators (फ्रीज)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/product-jpeg-500x500.webp" alt="Geyser">
+                    <span>Geysers (गिझर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/powerteck-double-rod-room-heater.jpg" alt="Heater">
+                    <span>Heaters (हीटर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/inverter-batteries-250x250.webp" alt="Inverter">
+                    <span>Inverters (इन्व्हर्टर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/power-stabilizer-500x500.webp" alt="Stabilizer">
+                    <span>Stabilizers (स्टेबलायझर)</span>
+                </div>
+                <div class="service-item">
+                    <img src="../JTG - Frontend Home Assignment/images/" alt="Electric Kettle">
+                    <span>Electric Kettles (इलेक्ट्रिक केतली)</span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="milestone">
+            <div class="milestone-content">
+                <h2>Milestone</h2>
+                <p>The Foundation store of the hospital was laid in September 1982 by Late Shri Dongreji Maharaj. His
+                    auspicious presence and blessings were the motivation for this undertaking of service to secleniy.
+                </p>
+                <a href="#" class="btn-outline">Read More</a>
+            </div>
+            <img src="/api/placeholder/600/400" alt="Hospital Timeline">
+        </section>
+
+        <section class="diagnostics">
+            <h2>Diagnostics</h2>
+            <div class="diagnostics-grid">
+                <div class="diagnostic-item">
+                    <img src="/api/placeholder/50/50" alt="Cardiology">
+                    <div>
+                        <h3>Cardiology</h3>
+                        <p>The Department of Cardiology at Poona...</p>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <div class="diagnostic-item">
+                    <img src="/api/placeholder/50/50" alt="Neurology">
+                    <div>
+                        <h3>Neurology</h3>
+                        <p>The Neurology Department offers...</p>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <div class="diagnostic-item">
+                    <img src="/api/placeholder/50/50" alt="Pulmonology">
+                    <div>
+                        <h3>Pulmonology</h3>
+                        <p>Poona Hospital has state-of-the-art...</p>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 40px 20px; background: #f8f9fa;">
+            <h2>Institute of Nursing Education</h2>
+            <p>The Institute of Nursing Education was started in Poona Hospital & Research Center in 1998</p>
+            <a href="#" class="btn-primary">Read More</a>
+            <img src="/api/placeholder/1200/400" alt="Nursing Students" style="width: 100%; margin-top: 20px;">
+        </section>
+    </main>
+
+    <footer style="background: #333; color: white; padding: 40px 20px;">
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;">
+            <div>
+                <img src="/api/placeholder/180/60" alt="Poona Hospital Logo" style="filter: brightness(0) invert(1);">
+                <p style="margin-top: 20px;">Poona Hospital & Research Center is a healthcare provider, par excellence,
+                    fast establishing it self as a global industry model in the tertiary healthcare system of india.</p>
+            </div>
+            <div>
+                <h3>Menus</h3>
+                <ul style="list-style: none; margin-top: 20px;">
+                    <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Diagnostics</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Specialties</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Quick links</h3>
+                <ul style="list-style: none; margin-top: 20px;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Accommodation</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Dietetics</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Hospital Directory</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Poona Hospital & Research Center,<br>
+                    27 Sadashiv Peth, Nr. Alka Talkies,<br>
+                    Pune 411030, Maharashtra.</p>
+                <p style="margin-top: 20px;">For Emergency: 020 66096000<br>
+                    For Appointment: +91 97305 59600<br>
+                    phrcjr@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>let currentIndex = 0;
+    const items = document.querySelectorAll('.service-item');
+    const totalItems = items.length;
+    const slider = document.querySelector('.slider');
+
+    // Function to move to the next item
+    function moveToNext() {
+        currentIndex++;
+        if (currentIndex >= totalItems) {
+            currentIndex = 0; // Loop back to the start
+        }
+        const offset = -currentIndex * (items[0].offsetWidth + 20); // Adjust for item width and spacing
+        slider.style.transform = `translateX(${offset}px)`;
+    }
+
+    // Set interval to move to next item every 3 seconds
+    setInterval(moveToNext, 3000);</script>
